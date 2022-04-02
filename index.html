@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- meta data  -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- title  -->
+	<title>Assignment Helper</title>
+	<!-- link css  -->
+	<link rel="stylesheet" href="./asset/css/all-style.css">
+	<link rel="stylesheet" href="./asset/css/style.css">
+	<link href="./asset/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./asset/css/jquery.datetimepicker.min.css">
+	<link rel="stylesheet" href="./asset/css/all_common_styles.css">
+	<link rel="stylesheet" href="./asset/css/custom_style.css">
+
+</head>
+
+<body>
+
+	<div class="order_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-12">
+					<div ng-app="myapp" ng-controller="myController" class="form_order_design">
+						<div class="card card-outline-secondary new-card card-design">
+							<div class="card-header">
+								<h3 class="mb-0">
+									Order Now
+								</h3>
+								<p>
+									Place your order to get best assignment help by our experts
+								</p>
+							</div>
+							<div class="card-body">
+								<form class="form" action="#" id="orderForm" method="POST">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="first" class="order-label">
+													Email Address
+												</label>
+												<input type="email" class="form-control " name="email" id="email_form"
+													value="" placeholder="Your Email">
+											</div>
+										</div>
+										<!--  col-md-6   -->
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="last" class="order-label">
+													Project Deadline
+												</label>
+												<input type="text" class="form-control datetimepicker" name="deadline"
+													value="" id="deadline_form" placeholder="Select Deadline">
+											</div>
+										</div>
+										<!--  col-md-6   -->
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="company" class="order-label">
+													Subject
+												</label>
+												<span class="twitter-typeahead"
+													style="position: relative; display: inline-block;">
+
+													<input type="text" name="subject" id="subject_form"
+														class="form-control typeahead tt-input" value=""
+														placeholder="Enter Subject" autocomplete="off"
+														spellcheck="false" dir="auto"
+														style="position: relative; vertical-align: top; background-color: transparent;">
+												</span>
+											</div>
+										</div>
+										<!--  col-md-6   -->
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="phone" class="order-label">
+													Number of Pages
+												</label>
+												<select name="pageQty" id="pageQty_form" class="form-control">
+													<option value="">Enter Page Count</option>
+													<option value="1">1 pages / 250 words </option>
+													<option value="2">2 pages / 500 words </option>
+													<option value="3">3 pages / 750 words </option>
+													<option value="4">4 pages / 1000 words </option>
+													<option value="5">5 pages / 1250 words </option>
+													<option value="6">6 pages / 1500 words </option>
+													<option value="7">7 pages / 1750 words </option>
+													<option value="8">8 pages / 2000 words </option>
+													<option value="9">9 pages / 2250 words </option>
+													<option value="10">10 pages / 2500 words </option>
+													<option value="11">11 pages / 2750 words </option>
+													<option value="12">12 pages / 3000 words </option>
+													<option value="13">13 pages / 3250 words </option>
+													<option value="14">14 pages / 3500 words </option>
+													<option value="15">15 pages / 3750 words </option>
+													<option value="16">16 pages / 4000 words </option>
+													<option value="17">17 pages / 4250 words </option>
+													<option value="18">18 pages / 4500 words </option>
+													<option value="19">19 pages / 4750 words </option>
+													<option value="20">20 pages / 5000 words </option>
+													<option value="21">21 pages / 5250 words </option>
+													<option value="22">22 pages / 5500 words </option>
+													<option value="23">23 pages / 5750 words </option>
+													<option value="24">24 pages / 6000 words </option>
+													<option value="25">25 pages / 6250 words </option>
+													<option value="26">26 pages / 6500 words </option>
+													<option value="27">27 pages / 6750 words </option>
+													<option value="28">28 pages / 7000 words </option>
+													<option value="29">29 pages / 7250 words </option>
+													<option value="30">30 pages / 7500 words </option>
+													<option value="32">32 pages / 8000 words </option>
+													<option value="34">34 pages / 8500 words </option>
+													<option value="36">36 pages / 9000 words </option>
+													<option value="38">38 pages / 9500 words </option>
+													<option value="40">40 pages / 10000 words </option>
+													<option value="50">50 pages / 12500 words </option>
+													<option value="60">60 pages / 15000 words </option>
+													<option value="70">70 pages / 17500 words </option>
+													<option value="80">80 pages / 20000 words </option>
+													<option value="90">90 pages / 22500 words </option>
+													<option value="100">100 pages / 25000 words </option>
+													<option value="110">110 pages / 27500 words </option>
+													<option value="120">120 pages / 30000 words </option>
+													<option value="130">130 pages / 32500 words </option>
+													<option value="140">140 pages / 35000 words </option>
+													<option value="150">150 pages / 37500 words </option>
+												</select>
+											</div>
+										</div>
+										<!--  col-md-6   -->
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="first" class="order-label">
+													Reference Style
+												</label>
+												<select name="references" id="references_form" class="form-control"
+													style="background: #fff;" placeholder="Select Reference">
+													<option value="">select reference style</option>
+													<option value="APA">APA</option>
+												</select>
+											</div>
+										</div>
+										<!--  col-md-6   -->
+
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="type" class="order-label">
+													Assignment Type
+												</label>
+												<select name="type" id="type_form" class="form-control"
+													style="background: #fff;" placeholder="Select Assignment Type">
+													<option value="">select assignment type</option>
+													<option value="test">Research</option>
+
+												</select>
+											</div>
+										</div>
+										<!--  col-md-6   -->
+									</div>
+
+									<div class="row mt-4">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label for="first" class="order-label">
+													Enter relevant details here
+												</label>
+												&nbsp;
+												<span id="textarea_feedback" class="textarea_feed">
+													4000 characters remaining
+												</span>
+												<textarea name="requirements" class="form-control"
+													id="requirements_form" maxlength="5000"
+													placeholder="Include any relevant details here"></textarea>
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class=" col-md-12 col-sm-12" id="fileUploadType">
+											<input type="file" name="fileName" id="files-upload3" style="display:none;"
+												multiple="">
+											<input type="hidden" name="fileName" id="fileUploadOrigin"
+												value="orderForm">
+
+											<a href="javascript:void(0);"
+												class="btn btn-primary btn-simple btn-round btn-lg" id="uploadFiles3"
+												tabindex="9"> <img src="./asset/image/upload.png"></a><span
+												id="extraMsg"> Attach Files</span>
+											<div class="col-sm-12" id="fileUpload3"></div>
+										</div>
+
+									</div>
+
+									<div class="row">
+										<div class="col-md-12 text-center">
+											<div class="submit_order_button"><input type="submit"
+													class="btn btn-success" id="orderBtn" value="Submit"
+													data-loading-text="Processing.."></div>
+										</div>
+									</div>
+
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+					<div class="order_page_sidebar">
+						<div class="row">
+							<div class="col-sm-4 col-6">
+								<div class="rotate_boxes_home">
+									<div class="rotate_order_icon">
+										<img src="./asset/image/order-step-1.svg">
+									</div>
+									<span>
+										Steps : 1
+									</span>
+									<h4>
+										Submit <br> Assignment
+									</h4>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="rotate_boxes_home">
+									<div class="rotate_order_icon">
+										<img src="./asset/image/order-step-2.svg">
+									</div>
+									<span>
+										Steps : 2
+									</span>
+									<h4>
+										Pay For <br> Assignments
+									</h4>
+								</div>
+							</div>
+							<div class=" col-sm-4 col-6">
+								<div class="rotate_boxes_home">
+									<div class="rotate_order_icon">
+										<img src="./asset/image/order-step-3.svg">
+									</div>
+									<span>
+										Steps : 3
+									</span>
+									<h4>
+										Get<br> Solution
+									</h4>
+								</div>
+							</div>
+						</div>
+
+						<div class=" order_page_details">
+							<div class="row">
+								<div class="col-sm-12">
+									<h3>
+										Why students prefer us?
+									</h3>
+								</div>
+							</div>
+							<div class="order_student_prefer">
+								<div class="row">
+									<div class="col-sm-4 col-6">
+										<div class="rotate_boxes_home">
+											<div class="rotate_order_icon">
+												<img src="./asset/image/quality-check.webp">
+											</div>
+											<h4>
+												TOP Quality
+											</h4>
+										</div>
+									</div>
+									<div class="col-sm-4 col-6">
+										<div class="rotate_boxes_home">
+											<div class="rotate_order_icon">
+												<img src="./asset/image/finance.webp">
+											</div>
+											<h4>
+												Best Price
+											</h4>
+										</div>
+									</div>
+									<div class="col-sm-4 col-6">
+										<div class="rotate_boxes_home">
+											<div class="rotate_order_icon">
+												<img src="./asset/image/timely-delivery.webp">
+											</div>
+											<h4>
+												Timely Delivery
+											</h4>
+										</div>
+									</div>
+									<div class="col-sm-4 col-6">
+										<div class="rotate_boxes_home">
+											<div class="rotate_order_icon">
+												<img src="./asset/image/customer-service.webp">
+											</div>
+											<h4>
+												24/7 Support
+											</h4>
+										</div>
+									</div>
+									<div class="col-sm-4 col-6">
+										<div class="rotate_boxes_home">
+											<div class="rotate_order_icon">
+												<img src="./asset/image/privacy.webp">
+											</div>
+											<h4>
+												100% Privacy
+											</h4>
+										</div>
+									</div>
+									<div class="col-sm-4 col-6">
+										<div class="rotate_boxes_home">
+											<div class="rotate_order_icon">
+												<img src="./asset/image/management.webp">
+											</div>
+											<h4>
+												PhD Experts
+											</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./asset/js/script-combine.js"></script>
+	<script src="./asset/js/script.js"></script>
+
+	<script>
+		var imageUrl = 'https://helper.phl-erp.com/static/images';
+		var domainUrl = 'https://helper.phl-erp.com/';
+	</script>
+
+</body>
+
+</html>
